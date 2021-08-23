@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin: 0px;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+} 
+
+body {
+    margin: 0;
+    font-family: 'Yomogi';
+    box-sizing: border-box;
+}
+
+.box {
+    border: 3px solid rgb(185, 185, 185);
+}
+
+
+/* header css */
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#header #header_title {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header #header_title #title_logo {
+    width: 50px;
+}
+
+
+
+/* footer css */
+
+#footer #information {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+}
+
+#footer #information dt, #footer #information span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#footer #information dl {
+    margin: 5px 0px;
+}
+
+#footer #information dd {
+    margin: 0px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+
+/* main css */
+
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+#main #container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px 150px 0px;
+}
+
+#main #container #login_form #login_content {
+    width: 500px;
+}
+
+#main #container #login_form #login_content .login_item {
+    display: flex;
+    flex-direction: column;
+}
+
+#main #container #login_form #login_content .login_item {
+    width: 500px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+#main #container #login_form #login_content .login_item .text_box {
+    border: 3px solid rgb(185, 185, 185);
+}
+
+#main #container #login_form #login_content .login_item .text_box input {
+    width: 100%;
+    height: 40px;
+    padding: 0px 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#main #container #login_form #login_content .login_item .error {
+    margin-left: 20px;
+    color: red;
+    font-weight: 600;
+}
+
+#main #container #login_form #login_content #submit_box {
+    display: flex;
+    justify-content: center;
+}
+
+#main #container #login_form #login_content #input_submit {
+    width: 100px;
+    height: 40px;
+    outline: 3px solid rgb(185, 185, 185);
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#main #container #login_form #login_content #login_box {
+    display: flex;
+    align-items: center;
+}
+
+#main #container #login_form #login_content #login_chk_box {
+    display: flex;
+    align-items: center;
+}
+
+#main #container #login_form #login_content #login_chk_box input[id=login_chk] + label {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(185, 185, 185);
+    cursor: pointer;
+}
+
+#main #container #login_form #login_content #login_chk_box input[id=login_chk]:checked +label {
+    background-image: url(/IMAGES/CheckIcon.svg);
+}
+
+#main #container #login_form #login_content #login_chk_box #chk_label {
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#main #container #login_form #login_content #login_chk_box input[id=login_chk] {
+    display: none;
+}
+
+#main #container #login_join {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 500px;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 900;
+}

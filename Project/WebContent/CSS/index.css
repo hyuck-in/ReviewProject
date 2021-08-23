@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+} 
+
+body {
+    margin: 0;
+    font-family: 'Yomogi';
+    box-sizing: border-box;
+}
+
+.box {
+    border: 3px solid rgb(185, 185, 185);
+}
+
+
+/* header css */
+
+#header .box {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#header .box #left_nav {
+    margin-left: 20px;
+}
+
+#header .box #left_nav #logo {
+    width: 30px;
+}
+
+#header .box #right_nav {
+    display: flex;
+    padding: 0px;
+    margin-right: 20px;
+}
+
+#header .box #right_nav li {
+    margin: 0 10px;
+}
+
+#header .box #right_nav li #help {
+    cursor: help;
+}
+
+/* footer css */
+
+#footer #information {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+}
+
+#footer #information dt, #footer #information span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#footer #information dl {
+    margin: 5px 0px;
+}
+
+#footer #information dd {
+    margin: 0px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+
+/* main css */
+
+#main .box {
+    display: flex;
+    flex-direction: column;
+}
+
+#main .box #menu_icon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#main .box #menu_icon a {
+    width: 50px;
+    height: 50px;
+}
+
+#main .box #menu_icon #contain_icon {
+    margin: 10px;
+}
+
+
+
+
+
+
+#main .box #all_manus #hmanus {
+    justify-self: center;
+    align-items: center;
+}
+
+
+#main .box #all_manus #hmanus h2 {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+#main .box #all_manus #hmanus #close_btn {
+    position: absolute;
+    top: 130px;
+    right: 20px;
+    transform:translateX(-50%);
+    margin: 30px 0px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+#main .box #swiper-container__id {
+    width: 1200px;
+    height: 600px;
+}
+
+#main .box #swiper-container__id #main_art {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#main .box #swiper-container__id #main_art .swiper-slide .box {
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+    width: 900px;
+    height: 500px;
+    margin: 0px auto;
+}
+
+.swiper-button-prev {
+    background: url(../IMAGES/Left4.png);
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+}
+
+
+.swiper-button-next {
+    background: url(../IMAGES/Right4.png);
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: black;
+}
+
+
